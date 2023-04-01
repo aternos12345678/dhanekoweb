@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="icons8-dragon-67.png"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BUSINESS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="textbox">
+            <h1>World's biggest company</h1>
+            <p>The HyperText Markup Language or HTML is the standard markup
+                 language for documents designed to be displayed in a web browser.<br>
+                  It can be assisted by technologies such as Cascading Style Sheets and scripting 
+                  languages such as JavaScript</p>
+ <a href="" class="button">visit us to know more</a>       
+                </div>
+
+    </section>
+<!-------JavaScript for Toggle Menu --------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    } 
+</script>
+
+
+</body>
+</html>
